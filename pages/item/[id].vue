@@ -13,7 +13,7 @@
             v-if="images[0] !== ''"
             class="flex items-center justify-center mt-w"
           >
-            <div v-for="image in images">
+            <div v-for="image in images" :key="image">
               <img
                 @mouseover="currentImage = image"
                 @click="currentImage = image"
